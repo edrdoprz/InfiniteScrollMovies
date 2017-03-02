@@ -1,0 +1,14 @@
+{
+  "name": "movie-challenge",
+  "description": "Movie poster infinite scroll",
+  "version": "0.0.1",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.11",
+    "angular-route": "~1.5.11",
+    "angular-loader": "~1.5.11",
+    "angular-mocks": "~1.5.11",
+    "angular-animate": "~1.5.11"
+  }
+}

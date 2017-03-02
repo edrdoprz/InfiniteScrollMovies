@@ -1,0 +1,12 @@
+<div infinite-scroll="nextPage()" infinite-scroll-distance="0">
+  <section class="all-movies">
+    <div class="title-container"><h1 ng-if="movies.length">POPULAR</h1></div>
+    <div class="movie" ng-repeat="movie in movies track by $index" ng-mouseover="movie.isHovered = true; console.log(movie);" ng-mouseleave="movie.isHovered = false;">
+      <movie-card movie="movie"></movie-card>
+      <div class="darken" ng-hide="movie.isHovered"></div>
+      <span class="title" ng-hide="movie.isHovered">{{ movie.title }}</span>
+    </div>
+  </section>
+  <div class="error" ng-show="errorMessage">{{ errorMessage }}</div>
+  <div class="loader" ng-show="loadingNextPage"></div>
+</div>
